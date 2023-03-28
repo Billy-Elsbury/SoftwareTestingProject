@@ -74,7 +74,8 @@ Loan {
     private void setRate(int period) {
 
         if((loanAmount >=500) && (loanAmount <=5000)) {
-            if (period >= 1 && period <= 3) {
+            if (period >= 1
+                    && period <= 3) {
                 annualRate = 10;
 
             } else {
@@ -84,7 +85,8 @@ Loan {
         }
         else if ((loanAmount >=5001) && (loanAmount <=10000))
         {
-            if(period >=1 && period <= 3 ){
+            if(period >=1
+                    && period <= 3 ){
                 annualRate = 8;
 
             }

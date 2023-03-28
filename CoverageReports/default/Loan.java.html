@@ -74,42 +74,44 @@ Loan {
     private void setRate(int period) {
 
 <span class="fc bfc" id="L76" title="All 4 branches covered.">        if((loanAmount &gt;=500) &amp;&amp; (loanAmount &lt;=5000)) {</span>
-<span class="pc bpc" id="L77" title="1 of 4 branches missed.">            if (period &gt;= 1 &amp;&amp; period &lt;= 3) {</span>
-<span class="fc" id="L78">                annualRate = 10;</span>
+<span class="pc bpc" id="L77" title="1 of 4 branches missed.">            if (period &gt;= 1</span>
+                    &amp;&amp; period &lt;= 3) {
+<span class="fc" id="L79">                annualRate = 10;</span>
 
             } else {
 
-<span class="fc" id="L82">                annualRate = 6;</span>
+<span class="fc" id="L83">                annualRate = 6;</span>
             }
         }
-<span class="fc bfc" id="L85" title="All 4 branches covered.">        else if ((loanAmount &gt;=5001) &amp;&amp; (loanAmount &lt;=10000))</span>
+<span class="fc bfc" id="L86" title="All 4 branches covered.">        else if ((loanAmount &gt;=5001) &amp;&amp; (loanAmount &lt;=10000))</span>
         {
-<span class="pc bpc" id="L87" title="1 of 4 branches missed.">            if(period &gt;=1 &amp;&amp; period &lt;= 3 ){</span>
-<span class="fc" id="L88">                annualRate = 8;</span>
+<span class="pc bpc" id="L88" title="1 of 4 branches missed.">            if(period &gt;=1</span>
+                    &amp;&amp; period &lt;= 3 ){
+<span class="fc" id="L90">                annualRate = 8;</span>
 
             }
 
             else
             {
-<span class="fc" id="L94">                annualRate = 5;</span>
+<span class="fc" id="L96">                annualRate = 5;</span>
             }
         }
         else
         {
-<span class="fc" id="L99">            throw new IllegalArgumentException();</span>
+<span class="fc" id="L101">            throw new IllegalArgumentException();</span>
         }
 
-<span class="fc" id="L102">        monthlyInterestRate = annualRate / 100.0 / MONTHS_IN_YEAR;</span>
-<span class="fc" id="L103">    }</span>
+<span class="fc" id="L104">        monthlyInterestRate = annualRate / 100.0 / MONTHS_IN_YEAR;</span>
+<span class="fc" id="L105">    }</span>
 
     //Sets the loan period of this loan.
     private void setPeriod (int periodInYears)
     {
-<span class="fc bfc" id="L108" title="All 4 branches covered.">        if (periodInYears &lt; 1 || periodInYears &gt; 5)</span>
-<span class="fc" id="L109">            throw new IllegalArgumentException();</span>
+<span class="fc bfc" id="L110" title="All 4 branches covered.">        if (periodInYears &lt; 1 || periodInYears &gt; 5)</span>
+<span class="fc" id="L111">            throw new IllegalArgumentException();</span>
         else
-<span class="fc" id="L111">            numberOfPayments = periodInYears * MONTHS_IN_YEAR;</span>
-<span class="fc" id="L112">    }</span>
+<span class="fc" id="L113">            numberOfPayments = periodInYears * MONTHS_IN_YEAR;</span>
+<span class="fc" id="L114">    }</span>
 
 }
 

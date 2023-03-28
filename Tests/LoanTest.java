@@ -1,5 +1,3 @@
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -21,7 +19,7 @@ public class LoanTest {
         }
 
 
-    //Testing Constructor by creating a new object and then testing that every field of the object has the correct value.
+        //Testing Constructor by creating a new object and then testing that every field of the object has the correct value.
         @Test
         public void testConstructor() {
             Loan loan = new Loan(5000, 2);
@@ -62,13 +60,13 @@ public class LoanTest {
             assertEquals(9.67, loan.getMonthlyPayment(), 0.01);
         }
 
+
         // Test for getAmount method:
         @Test
         public void testGetAmount() {
             Loan loan = new Loan(5000, 2);
             assertEquals(5000, loan.getAmount());
         }
-
 
 
         // Test for getPeriod method:
@@ -78,6 +76,7 @@ public class LoanTest {
             Loan loan = new Loan(5000, 2);
             assertEquals(2, loan.getPeriod());
         }
+
 
         // Test for getRate method:
 
@@ -149,7 +148,6 @@ public class LoanTest {
             assertThrows(IllegalArgumentException.class, () -> {
                 Loan loan = new Loan(0, 2);
             });
-
         }
 
         @Test
