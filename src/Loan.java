@@ -60,7 +60,7 @@ Loan {
     }
 
     //Sets the loan amount of this loan.
-    void setAmount(double amount) throws IllegalArgumentException {
+    private void setAmount(double amount) throws IllegalArgumentException {
 
         if (amount <= 0.0) {
             throw new IllegalArgumentException();
@@ -71,7 +71,7 @@ Loan {
     }
 
     //Sets the interest rate of this loan.
-    void setRate(int period) {
+    private void setRate(int period) {
 
         if((loanAmount >=500) && (loanAmount <=5000)) {
             if (period >= 1 && period <= 3) {
@@ -103,7 +103,7 @@ Loan {
     }
 
     //Sets the loan period of this loan.
-    void setPeriod(int periodInYears)
+    private void setPeriod (int periodInYears)
     {
         if (periodInYears < 1 || periodInYears > 5)
             throw new IllegalArgumentException();
@@ -112,5 +112,4 @@ Loan {
     }
 
 }
-
 

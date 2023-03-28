@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4117953a-53c2-4ef2-a650-616c9a9d4146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SoftwareTestingProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/LoanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Loan.java" afterDir="false" />
+    <list default="true" id="4117953a-53c2-4ef2-a650-616c9a9d4146" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/CoverageReports/default/Loan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/default/Loan.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/default/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/default/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/branchfc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/branchnc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/branchpc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/bundle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/class.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/greenbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/group.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/method.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/package.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/redbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/report.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/session.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/sort.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/source.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoverageReports/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/LoanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/LoanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\billy\Desktop\SoftwareTestingProject\CoverageReports" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,6 +67,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -54,9 +79,11 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/billy/Desktop/SoftwareTestingProject/CoverageReports",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "coverage"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,6 +94,75 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.LoanTest.testSetRateLowerAmountLowerPeriod">
+    <configuration name="LoanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTestingProject" />
+      <extension name="coverage" sample_coverage="false" runner="jacoco" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoanTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanTest.testGetInterestRateLowerAmountUpperPeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTestingProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoanTest" />
+      <option name="METHOD_NAME" value="testGetInterestRateLowerAmountUpperPeriod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanTest.testNullConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTestingProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoanTest" />
+      <option name="METHOD_NAME" value="testNullConstructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanTest.testSetRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTestingProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoanTest" />
+      <option name="METHOD_NAME" value="testSetRate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanTest.testSetRateLowerAmountLowerPeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTestingProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoanTest" />
+      <option name="METHOD_NAME" value="testSetRateLowerAmountLowerPeriod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.LoanTest.testGetInterestRateLowerAmountUpperPeriod" />
+      <item itemvalue="JUnit.LoanTest.testNullConstructor" />
+      <item itemvalue="JUnit.LoanTest.testSetRate" />
+      <item itemvalue="JUnit.LoanTest.testSetRateLowerAmountLowerPeriod" />
+      <item itemvalue="JUnit.LoanTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoanTest.testSetRateLowerAmountLowerPeriod" />
+        <item itemvalue="JUnit.LoanTest.testGetInterestRateLowerAmountUpperPeriod" />
+        <item itemvalue="JUnit.LoanTest" />
+        <item itemvalue="JUnit.LoanTest.testNullConstructor" />
+        <item itemvalue="JUnit.LoanTest.testSetRate" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,8 +171,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679859915677</updated>
-      <workItem from="1679859916968" duration="7394000" />
+      <workItem from="1679859916968" duration="7581000" />
+      <workItem from="1680025507933" duration="12571000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1679877753295</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679877753296</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,5 +197,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareTestingProject$LoanTest.exec" NAME="LoanTest Coverage Results" MODIFIED="1680038082914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/SoftwareTestingProject$LoanTest_testGetMonthlyPayment.ic" NAME="LoanTest.testGetMonthlyPayment Coverage Results" MODIFIED="1680026323044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SoftwareTestingProject$LoanTest.ic" NAME="LoanTest Coverage Results" MODIFIED="1680026721062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
