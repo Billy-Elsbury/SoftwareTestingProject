@@ -35,15 +35,15 @@ public class LoanTest {
         @Test
         public void testGetMonthlyPaymentUpperAmountUpperPeriod() {
             //interest: 5%
-            Loan loan = new Loan(5003, 5);
-            assertEquals(94.41, loan.getMonthlyPayment(), 0.01);
+            Loan loan = new Loan(10000, 5);
+            assertEquals(188.71, loan.getMonthlyPayment(), 0.01);
         }
 
         @Test
         public void testGetMonthlyPaymentUpperAmountLowerPeriod() {
             //interest: 8%
-            Loan loan = new Loan(5003, 1);
-            assertEquals(435.20, loan.getMonthlyPayment(), 0.01);
+            Loan loan = new Loan(10000, 1);
+            assertEquals(869.88, loan.getMonthlyPayment(), 0.01);
         }
 
         @Test
@@ -83,14 +83,14 @@ public class LoanTest {
         @Test
         public void testGetInterestRateUpperAmountUpperPeriod() {
             //interest: 5%
-            Loan loan = new Loan(5003, 5);
+            Loan loan = new Loan(10000, 5);
             assertEquals(5, loan.getRate(), 0.01);
         }
 
         @Test
         public void testGetInterestRateUpperAmountLowerPeriod() {
             //interest: 8%
-            Loan loan = new Loan(5003, 1);
+            Loan loan = new Loan(10000, 1);
             assertEquals(8, loan.getRate(), 0.01);
         }
 
@@ -231,23 +231,13 @@ public class LoanTest {
 
 
 
-        //To test setRate negatively the amount must be set to below 500
-
-        @Test
-        public void testLessThan500Amount() {
-            assertThrows(IllegalArgumentException.class, () -> new Loan(499, 1));
-        }
-
-
-
-
         //Parameterized testing invalid values
         @ParameterizedTest
         @CsvSource({
-                "499, 3",
-                "10001, 3",
-                "500, 0",
-                "500, 6",
+                "200, 3",
+                "13000, 3",
+                "600, -5",
+                "600, 10",
 
         })
         void testInvalidLoanValues(int amount, int period) {
@@ -260,19 +250,19 @@ public class LoanTest {
 
         @ParameterizedTest
         @CsvSource({
-                "500, 1, 10, 43.96, 527.50",
-                "5003, 5, 5, 94.41, 5664.77",
-                "5003, 2, 8, 226.27, 5430.53",
-                "500, 5, 6, 9.67, 579.98",
-                "10000, 5, 5, 188.71, 11322.74"
+                "500, 1, 43.96, 527.50",
+                "5003, 5, 94.41, 5664.77",
+                "5003, 2, 226.27, 5430.53",
+                "500, 5, 9.67, 579.98",
+                "10000, 5, 188.71, 11322.74"
         })
-        public void LoanParam(double loanAmount, int period, double interestRate, double expectedMonthlyPayment, double expectedTotalPayment) {
-            Loan loan10 = new Loan(loanAmount, period);
+        public void LoanParameters(double loanAmount, int period, double expectedMonthlyPayment, double expectedTotalPayment) {
+            Loan loanValidValues = new Loan(loanAmount, period);
 
-            double actualMonthlyPayment = loan10.getMonthlyPayment();
+            double actualMonthlyPayment = loanValidValues.getMonthlyPayment();
             assertEquals(expectedMonthlyPayment, actualMonthlyPayment,  0.01);
 
-            double actualTotalPayment = loan10.getTotalPayment();
+            double actualTotalPayment = loanValidValues.getTotalPayment();
             assertEquals(expectedTotalPayment, actualTotalPayment, 0.01);
         }
 
