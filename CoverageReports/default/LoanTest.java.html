@@ -35,15 +35,15 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void testGetMonthlyPaymentUpperAmountUpperPeriod() {
             //interest: 5%
-<span class="fc" id="L38">            Loan loan = new Loan(5003, 5);</span>
-<span class="fc" id="L39">            assertEquals(94.41, loan.getMonthlyPayment(), 0.01);</span>
+<span class="fc" id="L38">            Loan loan = new Loan(10000, 5);</span>
+<span class="fc" id="L39">            assertEquals(188.71, loan.getMonthlyPayment(), 0.01);</span>
 <span class="fc" id="L40">        }</span>
 
         @Test
         public void testGetMonthlyPaymentUpperAmountLowerPeriod() {
             //interest: 8%
-<span class="fc" id="L45">            Loan loan = new Loan(5003, 1);</span>
-<span class="fc" id="L46">            assertEquals(435.20, loan.getMonthlyPayment(), 0.01);</span>
+<span class="fc" id="L45">            Loan loan = new Loan(10000, 1);</span>
+<span class="fc" id="L46">            assertEquals(869.88, loan.getMonthlyPayment(), 0.01);</span>
 <span class="fc" id="L47">        }</span>
 
         @Test
@@ -83,14 +83,14 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void testGetInterestRateUpperAmountUpperPeriod() {
             //interest: 5%
-<span class="fc" id="L86">            Loan loan = new Loan(5003, 5);</span>
+<span class="fc" id="L86">            Loan loan = new Loan(10000, 5);</span>
 <span class="fc" id="L87">            assertEquals(5, loan.getRate(), 0.01);</span>
 <span class="fc" id="L88">        }</span>
 
         @Test
         public void testGetInterestRateUpperAmountLowerPeriod() {
             //interest: 8%
-<span class="fc" id="L93">            Loan loan = new Loan(5003, 1);</span>
+<span class="fc" id="L93">            Loan loan = new Loan(10000, 1);</span>
 <span class="fc" id="L94">            assertEquals(8, loan.getRate(), 0.01);</span>
 <span class="fc" id="L95">        }</span>
 
@@ -231,29 +231,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 
-        //To test setRate negatively the amount must be set to below 500
-
-        @Test
-        public void testLessThan500Amount() {
-
-<span class="pc" id="L239">            assertThrows(IllegalArgumentException.class, () -&gt; new Loan(499, 1));</span>
-<span class="fc" id="L240">        }</span>
-
-
-
-
         //Parameterized testing invalid values
         @ParameterizedTest
         @CsvSource({
-                &quot;499, 3&quot;,
-                &quot;10001, 3&quot;,
-                &quot;500, 0&quot;,
-                &quot;500, 6&quot;,
+                &quot;200, 3&quot;,
+                &quot;13000, 3&quot;,
+                &quot;600, -5&quot;,
+                &quot;600, 10&quot;,
 
         })
         void testInvalidLoanValues(int amount, int period) {
-<span class="pc" id="L255">            assertThrows(IllegalArgumentException.class, () -&gt; new Loan(amount, period));</span>
-<span class="fc" id="L256">        }</span>
+<span class="pc" id="L244">            assertThrows(IllegalArgumentException.class, () -&gt; new Loan(amount, period));</span>
+<span class="fc" id="L245">        }</span>
 
 
 
@@ -261,21 +250,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @ParameterizedTest
         @CsvSource({
-                &quot;500, 1, 10, 43.96, 527.50&quot;,
-                &quot;5003, 5, 5, 94.41, 5664.77&quot;,
-                &quot;5003, 2, 8, 226.27, 5430.53&quot;,
-                &quot;500, 5, 6, 9.67, 579.98&quot;,
-                &quot;10000, 5, 5, 188.71, 11322.74&quot;
+                &quot;500, 1, 43.96, 527.50&quot;,
+                &quot;5003, 5, 94.41, 5664.77&quot;,
+                &quot;5003, 2, 226.27, 5430.53&quot;,
+                &quot;500, 5, 9.67, 579.98&quot;,
+                &quot;10000, 5, 188.71, 11322.74&quot;
         })
-        public void LoanParam(double loanAmount, int period, double interestRate, double expectedMonthlyPayment, double expectedTotalPayment) {
-<span class="fc" id="L271">            Loan loan10 = new Loan(loanAmount, period);</span>
+        public void LoanParameters(double loanAmount, int period, double expectedMonthlyPayment, double expectedTotalPayment) {
+<span class="fc" id="L260">            Loan loanValidValues = new Loan(loanAmount, period);</span>
 
-<span class="fc" id="L273">            double actualMonthlyPayment = loan10.getMonthlyPayment();</span>
-<span class="fc" id="L274">            assertEquals(expectedMonthlyPayment, actualMonthlyPayment,  0.01);</span>
+<span class="fc" id="L262">            double actualMonthlyPayment = loanValidValues.getMonthlyPayment();</span>
+<span class="fc" id="L263">            assertEquals(expectedMonthlyPayment, actualMonthlyPayment,  0.01);</span>
 
-<span class="fc" id="L276">            double actualTotalPayment = loan10.getTotalPayment();</span>
-<span class="fc" id="L277">            assertEquals(expectedTotalPayment, actualTotalPayment, 0.01);</span>
-<span class="fc" id="L278">        }</span>
+<span class="fc" id="L265">            double actualTotalPayment = loanValidValues.getTotalPayment();</span>
+<span class="fc" id="L266">            assertEquals(expectedTotalPayment, actualTotalPayment, 0.01);</span>
+<span class="fc" id="L267">        }</span>
 
 
 

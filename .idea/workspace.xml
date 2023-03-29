@@ -6,18 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4117953a-53c2-4ef2-a650-616c9a9d4146" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoverageReports/default/Loan.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/default/Loan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoverageReports/default/Loan.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/default/Loan.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverageReports/default/LoanTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/default/LoanTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoverageReports/default/LoanTest.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/default/LoanTest.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoverageReports/default/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/default/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoverageReports/default/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/default/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoverageReports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoverageReports/jacoco-resources/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoverageReports/jacoco-resources/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/prettify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoverageReports/jacoco-resources/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/report.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoverageReports/jacoco-resources/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/jacoco-resources/sort.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoverageReports/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/CoverageReports/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoftwareTestingProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SoftwareTestingProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/LoanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/LoanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,33 +46,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/T00224562/Documents/GitHub/SoftwareTestingProject/CoverageReports",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/T00224562/Documents/GitHub/SoftwareTestingProject/CoverageReports&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -168,6 +162,7 @@
       <workItem from="1680025507933" duration="17232000" />
       <workItem from="1680086909333" duration="815000" />
       <workItem from="1680087741396" duration="7217000" />
+      <workItem from="1680098323177" duration="2757000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1679877753295</created>
@@ -199,7 +194,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SoftwareTestingProject$LoanTest.exec" NAME="LoanTest Coverage Results" MODIFIED="1680095146715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/SoftwareTestingProject$LoanTest.exec" NAME="LoanTest Coverage Results" MODIFIED="1680104071035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/SoftwareTestingProject$LoanTest_testGetMonthlyPayment.ic" NAME="LoanTest.testGetMonthlyPayment Coverage Results" MODIFIED="1680026323044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SoftwareTestingProject$LoanTest.ic" NAME="LoanTest Coverage Results" MODIFIED="1680026721062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
